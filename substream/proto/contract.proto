@@ -1,0 +1,1502 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+package contract.v1;
+message Events {
+    repeated Acofee_OwnershipTransferred acofee_ownership_transferreds = 1;
+    repeated Acofee_SetAconomyNftLendBorrowFee acofee_set_aconomy_nft_lend_borrow_fees = 2;
+    repeated Acofee_SetAconomyPiMarketFee acofee_set_aconomy_pi_market_fees = 3;
+    repeated Acofee_SetAconomyPoolFee acofee_set_aconomy_pool_fees = 4;
+    repeated Pinft_AdminChanged1 pinft_admin_changed_1s = 5;
+    repeated Pinft_AdminChanged2 pinft_admin_changed_2s = 6;
+    repeated Pinft_Approval pinft_approvals = 7;
+    repeated Pinft_ApprovalForAll pinft_approval_for_alls = 8;
+    repeated Pinft_BatchMetadataUpdate pinft_batch_metadata_updates = 9;
+    repeated Pinft_BeaconUpgraded1 pinft_beacon_upgraded_1s = 10;
+    repeated Pinft_BeaconUpgraded2 pinft_beacon_upgraded_2s = 11;
+    repeated Pinft_Initialized pinft_initializeds = 12;
+    repeated Pinft_MetadataUpdate pinft_metadata_updates = 13;
+    repeated Pinft_OwnershipTransferred pinft_ownership_transferreds = 14;
+    repeated Pinft_Paused pinft_pauseds = 15;
+    repeated Pinft_RoyaltiesSetForTokenId pinft_royalties_set_for_token_ids = 16;
+    repeated Pinft_RoyaltiesSetForValidator pinft_royalties_set_for_validators = 17;
+    repeated Pinft_TokenMinted pinft_token_minteds = 18;
+    repeated Pinft_Transfer pinft_transfers = 19;
+    repeated Pinft_Unpaused pinft_unpauseds = 20;
+    repeated Pinft_Upgraded1 pinft_upgraded_1s = 21;
+    repeated Pinft_Upgraded2 pinft_upgraded_2s = 22;
+    repeated Pimeth_AdminChanged1 pimeth_admin_changed_1s = 23;
+    repeated Pimeth_AdminChanged2 pimeth_admin_changed_2s = 24;
+    repeated Pimeth_BeaconUpgraded1 pimeth_beacon_upgraded_1s = 25;
+    repeated Pimeth_BeaconUpgraded2 pimeth_beacon_upgraded_2s = 26;
+    repeated Pimeth_Erc20Added pimeth_erc20_addeds = 27;
+    repeated Pimeth_Erc20Transferred pimeth_erc20_transferreds = 28;
+    repeated Pimeth_Initialized pimeth_initializeds = 29;
+    repeated Pimeth_OwnershipTransferred pimeth_ownership_transferreds = 30;
+    repeated Pimeth_Paused pimeth_pauseds = 31;
+    repeated Pimeth_PiNftBurnt pimeth_pi_nft_burnts = 32;
+    repeated Pimeth_PiNftRedeemed pimeth_pi_nft_redeemeds = 33;
+    repeated Pimeth_Unpaused pimeth_unpauseds = 34;
+    repeated Pimeth_Upgraded1 pimeth_upgraded_1s = 35;
+    repeated Pimeth_Upgraded2 pimeth_upgraded_2s = 36;
+    repeated Pimeth_ValidatorAdded pimeth_validator_addeds = 37;
+    repeated Pimeth_ValidatorFundsRepayed pimeth_validator_funds_repayeds = 38;
+    repeated Pimeth_ValidatorFundsWithdrawn pimeth_validator_funds_withdrawns = 39;
+    repeated Pimark_AdminChanged1 pimark_admin_changed_1s = 40;
+    repeated Pimark_AdminChanged2 pimark_admin_changed_2s = 41;
+    repeated Pimark_BeaconUpgraded1 pimark_beacon_upgraded_1s = 42;
+    repeated Pimark_BeaconUpgraded2 pimark_beacon_upgraded_2s = 43;
+    repeated Pimark_BidEvent pimark_bid_events = 44;
+    repeated Pimark_BidWithdrawn pimark_bid_withdrawns = 45;
+    repeated Pimark_Initialized pimark_initializeds = 46;
+    repeated Pimark_NftBought pimark_nft_boughts = 47;
+    repeated Pimark_OwnershipTransferred pimark_ownership_transferreds = 48;
+    repeated Pimark_Paused pimark_pauseds = 49;
+    repeated Pimark_SaleCancelled pimark_sale_cancelleds = 50;
+    repeated Pimark_SaleCreated pimark_sale_createds = 51;
+    repeated Pimark_SwapAccepted pimark_swap_accepteds = 52;
+    repeated Pimark_SwapCancelled pimark_swap_cancelleds = 53;
+    repeated Pimark_SwapProposed pimark_swap_proposeds = 54;
+    repeated Pimark_Unpaused pimark_unpauseds = 55;
+    repeated Pimark_Upgraded1 pimark_upgraded_1s = 56;
+    repeated Pimark_Upgraded2 pimark_upgraded_2s = 57;
+    repeated Pimark_UpdatedSalePrice pimark_updated_sale_prices = 58;
+    repeated Lendborrow_AdminChanged lendborrow_admin_changeds = 59;
+    repeated Lendborrow_BeaconUpgraded lendborrow_beacon_upgradeds = 60;
+    repeated Lendborrow_Upgraded lendborrow_upgradeds = 61;
+    repeated Validatednft_AdminChanged1 validatednft_admin_changed_1s = 62;
+    repeated Validatednft_AdminChanged2 validatednft_admin_changed_2s = 63;
+    repeated Validatednft_Approval validatednft_approvals = 64;
+    repeated Validatednft_ApprovalForAll validatednft_approval_for_alls = 65;
+    repeated Validatednft_BatchMetadataUpdate validatednft_batch_metadata_updates = 66;
+    repeated Validatednft_BeaconUpgraded1 validatednft_beacon_upgraded_1s = 67;
+    repeated Validatednft_BeaconUpgraded2 validatednft_beacon_upgraded_2s = 68;
+    repeated Validatednft_Initialized validatednft_initializeds = 69;
+    repeated Validatednft_MetadataUpdate validatednft_metadata_updates = 70;
+    repeated Validatednft_OwnershipTransferred validatednft_ownership_transferreds = 71;
+    repeated Validatednft_Paused validatednft_pauseds = 72;
+    repeated Validatednft_RoyaltiesSetForValidator validatednft_royalties_set_for_validators = 73;
+    repeated Validatednft_TokenMinted validatednft_token_minteds = 74;
+    repeated Validatednft_Transfer validatednft_transfers = 75;
+    repeated Validatednft_Unpaused validatednft_unpauseds = 76;
+    repeated Validatednft_Upgraded1 validatednft_upgraded_1s = 77;
+    repeated Validatednft_Upgraded2 validatednft_upgraded_2s = 78;
+}
+message Calls {
+    repeated Acofee_RenounceOwnershipCall acofee_call_renounce_ownerships = 1;
+    repeated Acofee_SetAconomyNftLendBorrowFeeCall acofee_call_set_aconomy_nft_lend_borrow_fees = 2;
+    repeated Acofee_SetAconomyPiMarketFeeCall acofee_call_set_aconomy_pi_market_fees = 3;
+    repeated Acofee_SetAconomyPoolFeeCall acofee_call_set_aconomy_pool_fees = 4;
+    repeated Acofee_TransferOwnershipCall acofee_call_transfer_ownerships = 5;
+    repeated Pinft_AddTrustedForwarderCall pinft_call_add_trusted_forwarders = 6;
+    repeated Pinft_ApproveCall pinft_call_approves = 7;
+    repeated Pinft_DeleteNftCall pinft_call_delete_nfts = 8;
+    repeated Pinft_DeleteValidatorRoyaltiesCall pinft_call_delete_validator_royalties = 9;
+    repeated Pinft_InitializeCall pinft_call_initializes = 10;
+    repeated Pinft_LazyMintNftCall pinft_call_lazy_mint_nfts = 11;
+    repeated Pinft_MintNftCall pinft_call_mint_nfts = 12;
+    repeated Pinft_PauseCall pinft_call_pauses = 13;
+    repeated Pinft_RemoveTrustedForwarderCall pinft_call_remove_trusted_forwarders = 14;
+    repeated Pinft_RenounceOwnershipCall pinft_call_renounce_ownerships = 15;
+    repeated Pinft_SafeTransferFrom1call pinft_call_safe_transfer_from_1s = 16;
+    repeated Pinft_SafeTransferFrom2call pinft_call_safe_transfer_from_2s = 17;
+    repeated Pinft_SetApprovalForAllCall pinft_call_set_approval_for_alls = 18;
+    repeated Pinft_SetRoyaltiesForValidatorCall pinft_call_set_royalties_for_validators = 19;
+    repeated Pinft_TransferFromCall pinft_call_transfer_froms = 20;
+    repeated Pinft_TransferOwnershipCall pinft_call_transfer_ownerships = 21;
+    repeated Pinft_UnpauseCall pinft_call_unpauses = 22;
+    repeated Pinft_UpgradeToCall pinft_call_upgrade_tos = 23;
+    repeated Pinft_UpgradeToAndCallCall pinft_call_upgrade_to_and_calls = 24;
+    repeated Pimeth_RepayCall pimeth_call_repays = 25;
+    repeated Pimeth_AddErc20call pimeth_call_add_erc_20s = 26;
+    repeated Pimeth_AddTrustedForwarderCall pimeth_call_add_trusted_forwarders = 27;
+    repeated Pimeth_AddValidatorCall pimeth_call_add_validators = 28;
+    repeated Pimeth_InitializeCall pimeth_call_initializes = 29;
+    repeated Pimeth_LazyAddValidatorCall pimeth_call_lazy_add_validators = 30;
+    repeated Pimeth_OnErc721ReceivedCall pimeth_call_on_erc721_receiveds = 31;
+    repeated Pimeth_PaidCommissionCall pimeth_call_paid_commissions = 32;
+    repeated Pimeth_PauseCall pimeth_call_pauses = 33;
+    repeated Pimeth_RedeemOrBurnPiNftCall pimeth_call_redeem_or_burn_pi_nfts = 34;
+    repeated Pimeth_RemoveTrustedForwarderCall pimeth_call_remove_trusted_forwarders = 35;
+    repeated Pimeth_RenounceOwnershipCall pimeth_call_renounce_ownerships = 36;
+    repeated Pimeth_SetPiMarketCall pimeth_call_set_pi_markets = 37;
+    repeated Pimeth_TransferOwnershipCall pimeth_call_transfer_ownerships = 38;
+    repeated Pimeth_UnpauseCall pimeth_call_unpauses = 39;
+    repeated Pimeth_UpgradeToCall pimeth_call_upgrade_tos = 40;
+    repeated Pimeth_UpgradeToAndCallCall pimeth_call_upgrade_to_and_calls = 41;
+    repeated Pimeth_WithdrawCall pimeth_call_withdraws = 42;
+    repeated Pimark_BidCall pimark_call_bids = 43;
+    repeated Pimark_BuyNftCall pimark_call_buy_nfts = 44;
+    repeated Pimark_SellNftByBidCall pimark_call_sell_nft_by_bids = 45;
+    repeated Pimark_AcceptSwapRequestCall pimark_call_accept_swap_requests = 46;
+    repeated Pimark_CancelSaleCall pimark_call_cancel_sales = 47;
+    repeated Pimark_CancelSwapCall pimark_call_cancel_swaps = 48;
+    repeated Pimark_EditSalePriceCall pimark_call_edit_sale_prices = 49;
+    repeated Pimark_ExecuteBidOrderCall pimark_call_execute_bid_orders = 50;
+    repeated Pimark_InitializeCall pimark_call_initializes = 51;
+    repeated Pimark_MakeSwapRequestCall pimark_call_make_swap_requests = 52;
+    repeated Pimark_OnErc721ReceivedCall pimark_call_on_erc721_receiveds = 53;
+    repeated Pimark_PauseCall pimark_call_pauses = 54;
+    repeated Pimark_RenounceOwnershipCall pimark_call_renounce_ownerships = 55;
+    repeated Pimark_SellNftCall pimark_call_sell_nfts = 56;
+    repeated Pimark_TransferOwnershipCall pimark_call_transfer_ownerships = 57;
+    repeated Pimark_UnpauseCall pimark_call_unpauses = 58;
+    repeated Pimark_UpgradeToCall pimark_call_upgrade_tos = 59;
+    repeated Pimark_UpgradeToAndCallCall pimark_call_upgrade_to_and_calls = 60;
+    repeated Pimark_WithdrawBidMoneyCall pimark_call_withdraw_bid_monies = 61;
+    repeated Validatednft_ApproveCall validatednft_call_approves = 62;
+    repeated Validatednft_DeleteNftCall validatednft_call_delete_nfts = 63;
+    repeated Validatednft_DeleteValidatorRoyaltiesCall validatednft_call_delete_validator_royalties = 64;
+    repeated Validatednft_InitializeCall validatednft_call_initializes = 65;
+    repeated Validatednft_MintValidatedNftCall validatednft_call_mint_validated_nfts = 66;
+    repeated Validatednft_OnErc721ReceivedCall validatednft_call_on_erc721_receiveds = 67;
+    repeated Validatednft_PauseCall validatednft_call_pauses = 68;
+    repeated Validatednft_RenounceOwnershipCall validatednft_call_renounce_ownerships = 69;
+    repeated Validatednft_SafeTransferFrom1call validatednft_call_safe_transfer_from_1s = 70;
+    repeated Validatednft_SafeTransferFrom2call validatednft_call_safe_transfer_from_2s = 71;
+    repeated Validatednft_SetApprovalForAllCall validatednft_call_set_approval_for_alls = 72;
+    repeated Validatednft_SetRoyaltiesForValidatorCall validatednft_call_set_royalties_for_validators = 73;
+    repeated Validatednft_TransferFromCall validatednft_call_transfer_froms = 74;
+    repeated Validatednft_TransferOwnershipCall validatednft_call_transfer_ownerships = 75;
+    repeated Validatednft_UnpauseCall validatednft_call_unpauses = 76;
+    repeated Validatednft_UpgradeToCall validatednft_call_upgrade_tos = 77;
+    repeated Validatednft_UpgradeToAndCallCall validatednft_call_upgrade_to_and_calls = 78;
+}
+message EventsCalls {
+    Events events = 1;
+    Calls calls = 2;
+}
+message Acofee_OwnershipTransferred {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_owner = 5;
+    bytes new_owner = 6;
+}
+message Acofee_SetAconomyNftLendBorrowFee {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    uint64 new_fee = 5;
+    uint64 old_fee = 6;
+}
+message Acofee_SetAconomyPiMarketFee {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    uint64 new_fee = 5;
+    uint64 old_fee = 6;
+}
+message Acofee_SetAconomyPoolFee {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    uint64 new_fee = 5;
+    uint64 old_fee = 6;
+}
+  
+message Acofee_RenounceOwnershipCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+}
+message Acofee_SetAconomyNftLendBorrowFeeCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    uint64 new_fee = 6;
+}
+message Acofee_SetAconomyPiMarketFeeCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    uint64 new_fee = 6;
+}
+message Acofee_SetAconomyPoolFeeCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    uint64 new_fee = 6;
+}
+message Acofee_TransferOwnershipCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes new_owner = 6;
+}
+message Pinft_AdminChanged1 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_admin = 5;
+    bytes new_admin = 6;
+}
+message Pinft_AdminChanged2 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_admin = 5;
+    bytes new_admin = 6;
+}
+message Pinft_Approval {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes owner = 5;
+    bytes approved = 6;
+    string token_id = 7;
+}
+message Pinft_ApprovalForAll {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes owner = 5;
+    bytes operator = 6;
+    bool approved = 7;
+}
+message Pinft_BatchMetadataUpdate {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string u_from_token_id = 5;
+    string u_to_token_id = 6;
+}
+message Pinft_BeaconUpgraded1 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes beacon = 5;
+}
+message Pinft_BeaconUpgraded2 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes beacon = 5;
+}
+message Pinft_Initialized {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    uint64 version = 5;
+}
+message Pinft_MetadataUpdate {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string u_token_id = 5;
+}
+message Pinft_OwnershipTransferred {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_owner = 5;
+    bytes new_owner = 6;
+}
+message Pinft_Paused {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes account = 5;
+}
+message Pinft_RoyaltiesSetForTokenId {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string token_id = 5;
+}
+message Pinft_RoyaltiesSetForValidator {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string token_id = 5;
+}
+message Pinft_TokenMinted {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string token_id = 5;
+    bytes to = 6;
+    string uri = 7;
+}
+message Pinft_Transfer {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes from = 5;
+    bytes to = 6;
+    string token_id = 7;
+}
+message Pinft_Unpaused {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes account = 5;
+}
+message Pinft_Upgraded1 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes implementation = 5;
+}
+message Pinft_Upgraded2 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes implementation = 5;
+}
+  
+message Pinft_AddTrustedForwarderCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_tf = 6;
+}
+message Pinft_ApproveCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes to = 6;
+    string token_id = 7;
+}
+message Pinft_DeleteNftCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_token_id = 6;
+}
+message Pinft_DeleteValidatorRoyaltiesCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_token_id = 6;
+}
+message Pinft_InitializeCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_name = 6;
+    string u_symbol = 7;
+    bytes u_pi_nft_methods_address = 8;
+    bytes tf_gelato = 9;
+}
+message Pinft_LazyMintNftCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_to = 6;
+    string u_uri = 7;
+    string output_param0 = 8;
+}
+message Pinft_MintNftCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_to = 6;
+    string u_uri = 7;
+    string output_param0 = 8;
+}
+message Pinft_PauseCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+}
+message Pinft_RemoveTrustedForwarderCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_tf = 6;
+}
+message Pinft_RenounceOwnershipCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+}
+message Pinft_SafeTransferFrom1call {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes from = 6;
+    bytes to = 7;
+    string token_id = 8;
+}
+message Pinft_SafeTransferFrom2call {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes from = 6;
+    bytes to = 7;
+    string token_id = 8;
+    bytes data = 9;
+}
+message Pinft_SetApprovalForAllCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes operator = 6;
+    bool approved = 7;
+}
+message Pinft_SetRoyaltiesForValidatorCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_token_id = 6;
+    string u_commission = 7;
+}
+message Pinft_TransferFromCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes from = 6;
+    bytes to = 7;
+    string token_id = 8;
+}
+message Pinft_TransferOwnershipCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes new_owner = 6;
+}
+message Pinft_UnpauseCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+}
+message Pinft_UpgradeToCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes new_implementation = 6;
+}
+message Pinft_UpgradeToAndCallCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes new_implementation = 6;
+    bytes data = 7;
+}
+message Pimeth_AdminChanged1 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_admin = 5;
+    bytes new_admin = 6;
+}
+message Pimeth_AdminChanged2 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_admin = 5;
+    bytes new_admin = 6;
+}
+message Pimeth_BeaconUpgraded1 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes beacon = 5;
+}
+message Pimeth_BeaconUpgraded2 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes beacon = 5;
+}
+message Pimeth_Erc20Added {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes collection_address = 5;
+    bytes from = 6;
+    string token_id = 7;
+    bytes erc20_contract = 8;
+    string value = 9;
+    string uri = 10;
+    string total_balance = 11;
+}
+message Pimeth_Erc20Transferred {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes collection_address = 5;
+    string token_id = 6;
+    bytes to = 7;
+    bytes erc20_contract = 8;
+    string value = 9;
+}
+message Pimeth_Initialized {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    uint64 version = 5;
+}
+message Pimeth_OwnershipTransferred {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_owner = 5;
+    bytes new_owner = 6;
+}
+message Pimeth_Paused {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes account = 5;
+}
+message Pimeth_PiNftBurnt {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes collection_address = 5;
+    string token_id = 6;
+    bytes nft_reciever = 7;
+    bytes erc20_receiver = 8;
+    bytes erc20_contract = 9;
+    string value = 10;
+}
+message Pimeth_PiNftRedeemed {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes collection_address = 5;
+    string token_id = 6;
+    bytes nft_reciever = 7;
+    bytes validator_address = 8;
+    bytes erc20_contract = 9;
+    string value = 10;
+}
+message Pimeth_Unpaused {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes account = 5;
+}
+message Pimeth_Upgraded1 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes implementation = 5;
+}
+message Pimeth_Upgraded2 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes implementation = 5;
+}
+message Pimeth_ValidatorAdded {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes collection_address = 5;
+    string token_id = 6;
+    bytes validator = 7;
+}
+message Pimeth_ValidatorFundsRepayed {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes collection_address = 5;
+    bytes repayer = 6;
+    string token_id = 7;
+    bytes erc20_contract = 8;
+    string amount = 9;
+}
+message Pimeth_ValidatorFundsWithdrawn {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes collection_address = 5;
+    bytes withdrawer = 6;
+    string token_id = 7;
+    bytes erc20_contract = 8;
+    string amount = 9;
+}
+  
+message Pimeth_RepayCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_collection_address = 6;
+    string u_token_id = 7;
+    bytes u_erc20_contract = 8;
+    string u_amount = 9;
+}
+message Pimeth_AddErc20call {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_collection_address = 6;
+    string u_token_id = 7;
+    bytes u_erc20_contract = 8;
+    string u_value = 9;
+    string u_commission = 10;
+    string u_uri = 11;
+}
+message Pimeth_AddTrustedForwarderCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_tf = 6;
+}
+message Pimeth_AddValidatorCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_collection_address = 6;
+    string u_token_id = 7;
+    bytes u_validator = 8;
+}
+message Pimeth_InitializeCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes trusted_forwarder = 6;
+}
+message Pimeth_LazyAddValidatorCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_collection_address = 6;
+    string u_token_id = 7;
+    bytes u_validator = 8;
+}
+message Pimeth_OnErc721ReceivedCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes param0 = 6;
+    bytes param1 = 7;
+    string param2 = 8;
+    bytes param3 = 9;
+    bytes output_param0 = 10;
+}
+message Pimeth_PaidCommissionCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_collection = 6;
+    string u_token_id = 7;
+}
+message Pimeth_PauseCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+}
+message Pimeth_RedeemOrBurnPiNftCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_collection_address = 6;
+    string u_token_id = 7;
+    bytes u_nft_receiver = 8;
+    bytes u_erc20_receiver = 9;
+    bytes u_erc20_contract = 10;
+    bool burn_nft = 11;
+}
+message Pimeth_RemoveTrustedForwarderCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_tf = 6;
+}
+message Pimeth_RenounceOwnershipCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+}
+message Pimeth_SetPiMarketCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_pi_market = 6;
+}
+message Pimeth_TransferOwnershipCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes new_owner = 6;
+}
+message Pimeth_UnpauseCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+}
+message Pimeth_UpgradeToCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes new_implementation = 6;
+}
+message Pimeth_UpgradeToAndCallCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes new_implementation = 6;
+    bytes data = 7;
+}
+message Pimeth_WithdrawCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_collection_address = 6;
+    string u_token_id = 7;
+    bytes u_erc20_contract = 8;
+    string u_amount = 9;
+}
+message Pimark_AdminChanged1 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_admin = 5;
+    bytes new_admin = 6;
+}
+message Pimark_AdminChanged2 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_admin = 5;
+    bytes new_admin = 6;
+}
+message Pimark_BeaconUpgraded1 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes beacon = 5;
+}
+message Pimark_BeaconUpgraded2 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes beacon = 5;
+}
+message Pimark_BidEvent {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string token_id = 5;
+    string sale_id = 6;
+    string bid_id = 7;
+    string amount = 8;
+    bytes collection_address = 9;
+    bool bid_created = 10;
+}
+message Pimark_BidWithdrawn {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string sale_id = 5;
+    string bid_id = 6;
+}
+message Pimark_Initialized {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    uint64 version = 5;
+}
+message Pimark_NftBought {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string token_id = 5;
+    bytes collection_address = 6;
+}
+message Pimark_OwnershipTransferred {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_owner = 5;
+    bytes new_owner = 6;
+}
+message Pimark_Paused {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes account = 5;
+}
+message Pimark_SaleCancelled {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string sale_id = 5;
+}
+message Pimark_SaleCreated {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string token_id = 5;
+    bytes token_contract = 6;
+    string sale_id = 7;
+    string bid_time_duration = 8;
+    string price = 9;
+}
+message Pimark_SwapAccepted {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string swap_id = 5;
+}
+message Pimark_SwapCancelled {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string swap_id = 5;
+}
+message Pimark_SwapProposed {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes to = 5;
+    string swap_id = 6;
+    string out_token_id = 7;
+    bytes out_token_id_address = 8;
+    string in_token_id = 9;
+    bytes in_token_id_address = 10;
+}
+message Pimark_Unpaused {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes account = 5;
+}
+message Pimark_Upgraded1 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes implementation = 5;
+}
+message Pimark_Upgraded2 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes implementation = 5;
+}
+message Pimark_UpdatedSalePrice {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string sale_id = 5;
+    string price = 6;
+    string duration = 7;
+}
+  
+message Pimark_BidCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_sale_id = 6;
+    string u_bid_price = 7;
+}
+message Pimark_BuyNftCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_sale_id = 6;
+}
+message Pimark_SellNftByBidCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_contract_address = 6;
+    string u_token_id = 7;
+    string u_price = 8;
+    string u_bid_time = 9;
+    bytes u_currency = 10;
+}
+message Pimark_AcceptSwapRequestCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string swap_id = 6;
+}
+message Pimark_CancelSaleCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_sale_id = 6;
+}
+message Pimark_CancelSwapCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_swap_id = 6;
+}
+message Pimark_EditSalePriceCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_sale_id = 6;
+    string u_price = 7;
+    string u_duration = 8;
+}
+message Pimark_ExecuteBidOrderCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_sale_id = 6;
+    string u_bid_order_id = 7;
+}
+message Pimark_InitializeCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_fee_address = 6;
+    bytes u_collection_factory_address = 7;
+    bytes u_pi_nft_methods_address = 8;
+    bytes u_pi_nf_taddress = 9;
+}
+message Pimark_MakeSwapRequestCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes contract_address1 = 6;
+    bytes contract_address2 = 7;
+    string token1 = 8;
+    string token2 = 9;
+    string output_param0 = 10;
+}
+message Pimark_OnErc721ReceivedCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes param0 = 6;
+    bytes param1 = 7;
+    string param2 = 8;
+    bytes param3 = 9;
+    bytes output_param0 = 10;
+}
+message Pimark_PauseCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+}
+message Pimark_RenounceOwnershipCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+}
+message Pimark_SellNftCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_contract_address = 6;
+    string u_token_id = 7;
+    string u_price = 8;
+    bytes u_currency = 9;
+}
+message Pimark_TransferOwnershipCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes new_owner = 6;
+}
+message Pimark_UnpauseCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+}
+message Pimark_UpgradeToCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes new_implementation = 6;
+}
+message Pimark_UpgradeToAndCallCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes new_implementation = 6;
+    bytes data = 7;
+}
+message Pimark_WithdrawBidMoneyCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_sale_id = 6;
+    string u_bid_id = 7;
+}
+message Lendborrow_AdminChanged {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_admin = 5;
+    bytes new_admin = 6;
+}
+message Lendborrow_BeaconUpgraded {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes beacon = 5;
+}
+message Lendborrow_Upgraded {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes implementation = 5;
+}
+  
+message Validatednft_AdminChanged1 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_admin = 5;
+    bytes new_admin = 6;
+}
+message Validatednft_AdminChanged2 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_admin = 5;
+    bytes new_admin = 6;
+}
+message Validatednft_Approval {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes owner = 5;
+    bytes approved = 6;
+    string token_id = 7;
+}
+message Validatednft_ApprovalForAll {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes owner = 5;
+    bytes operator = 6;
+    bool approved = 7;
+}
+message Validatednft_BatchMetadataUpdate {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string u_from_token_id = 5;
+    string u_to_token_id = 6;
+}
+message Validatednft_BeaconUpgraded1 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes beacon = 5;
+}
+message Validatednft_BeaconUpgraded2 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes beacon = 5;
+}
+message Validatednft_Initialized {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    uint64 version = 5;
+}
+message Validatednft_MetadataUpdate {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string u_token_id = 5;
+}
+message Validatednft_OwnershipTransferred {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes previous_owner = 5;
+    bytes new_owner = 6;
+}
+message Validatednft_Paused {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes account = 5;
+}
+message Validatednft_RoyaltiesSetForValidator {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string token_id = 5;
+}
+message Validatednft_TokenMinted {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    string token_id = 5;
+    bytes to = 6;
+    string uri = 7;
+}
+message Validatednft_Transfer {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes from = 5;
+    bytes to = 6;
+    string token_id = 7;
+}
+message Validatednft_Unpaused {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes account = 5;
+}
+message Validatednft_Upgraded1 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes implementation = 5;
+}
+message Validatednft_Upgraded2 {
+    string evt_tx_hash = 1;
+    uint32 evt_index = 2;
+    google.protobuf.Timestamp evt_block_time = 3;
+    uint64 evt_block_number = 4;
+    bytes implementation = 5;
+}
+  
+message Validatednft_ApproveCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes to = 6;
+    string token_id = 7;
+}
+message Validatednft_DeleteNftCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_token_id = 6;
+}
+message Validatednft_DeleteValidatorRoyaltiesCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_token_id = 6;
+}
+message Validatednft_InitializeCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_name = 6;
+    string u_symbol = 7;
+    bytes u_pi_nf_tmethod_address = 8;
+}
+message Validatednft_MintValidatedNftCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes u_to = 6;
+    string u_uri = 7;
+    string output_param0 = 8;
+}
+message Validatednft_OnErc721ReceivedCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes param0 = 6;
+    bytes param1 = 7;
+    string param2 = 8;
+    bytes param3 = 9;
+    bytes output_param0 = 10;
+}
+message Validatednft_PauseCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+}
+message Validatednft_RenounceOwnershipCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+}
+message Validatednft_SafeTransferFrom1call {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes from = 6;
+    bytes to = 7;
+    string token_id = 8;
+}
+message Validatednft_SafeTransferFrom2call {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes from = 6;
+    bytes to = 7;
+    string token_id = 8;
+    bytes data = 9;
+}
+message Validatednft_SetApprovalForAllCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes operator = 6;
+    bool approved = 7;
+}
+message Validatednft_SetRoyaltiesForValidatorCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    string u_token_id = 6;
+    string u_commission = 7;
+}
+message Validatednft_TransferFromCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes from = 6;
+    bytes to = 7;
+    string token_id = 8;
+}
+message Validatednft_TransferOwnershipCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes new_owner = 6;
+}
+message Validatednft_UnpauseCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+}
+message Validatednft_UpgradeToCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes new_implementation = 6;
+}
+message Validatednft_UpgradeToAndCallCall {
+    string call_tx_hash = 1;
+    google.protobuf.Timestamp call_block_time = 2;
+    uint64 call_block_number = 3;
+    uint64 call_ordinal = 4;
+    bool call_success = 5;
+    bytes new_implementation = 6;
+    bytes data = 7;
+}
